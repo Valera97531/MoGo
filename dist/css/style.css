@@ -182,6 +182,7 @@ body {
 }
 .header__menu {
   display: flex;
+  align-items: center;
 }
 .header__menu > li:not(:last-child) {
   margin-right: 3rem;
@@ -191,13 +192,10 @@ body {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  transition: 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
   position: relative;
 }
-.header__link:hover {
-  color: #FCE38A;
-}
-.header__link:hover:before {
+.header__link:before {
   content: "";
   position: absolute;
   bottom: -0.5rem;
@@ -206,6 +204,28 @@ body {
   height: 3px;
   background-color: #FCE38A;
   border-radius: 0.1rem;
+  transition: all 0.4s ease 0s;
+  clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+}
+.header__link:hover {
+  color: #FCE38A;
+}
+.header__link:hover:before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.header #search, .header #shopping {
+  width: 24px;
+  height: 24px;
+}
+.header #shopping {
+  color: #ffffff;
+}
+.header .bst1 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
 }
 
 .promo {
