@@ -1,5 +1,140 @@
 .promo {
-	height: 100vh;
-	background: url('../img/promo/promo-bg.jpg') center center / cover no-repeat;	
-	
+	min-height: 100vh;
+	width: 100vw;
+	background: url('../img/promo/promo-bg.jpg') center center / cover no-repeat;
+	@media (max-height: 760px) {
+		padding: 5rem 0rem 0rem 0rem;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		color: $colorLight;
+		position: relative;
+		min-height: 100vh;
+	}
+	&__headers {
+		text-align: center;
+		max-width: 920px;
+		@media(max-width: 857px) {
+			margin: 0rem 0rem 1rem 0rem;
+		}
+	}
+	&__title {
+		font-family: $fontFamilyItalyc;
+		font-size: 4.5rem;
+		margin: 0rem 0rem 2rem 0rem;
+		@media (max-width: 830px) {
+			font-size: 4rem;
+		}
+		@media (max-width: 460px) {
+			font-size: 2.5rem;
+		}
+	}
+	&__subtitle {
+		font-family: $fontFamilyTitle;
+		font-weight: 700;
+		font-size: 9.375rem;
+		text-transform: uppercase;
+		@media (max-width: 830px), (max-height: 760px) {
+			font-size: 5rem;
+		}
+		@media (max-width: 460px) {
+			font-size: 3rem;
+		}
+	}
+	&__btns {
+		position: relative;
+		margin: 0rem 0rem 1.5rem 0rem;
+	}
+	&__topline {
+		margin: 0rem 0rem 4rem 0rem;
+		background: $colorLight;
+		position: relative;
+		height: 3px;
+		width: 60px;
+		left: 50%;
+		transform: translateX(-50%);
+		@media (max-height: 330px), (max-width:540px) {
+			margin: 0rem 0rem 2rem 0rem;
+		}
+	}
+	&__btn {
+		border: 3px solid $colorLight;
+		padding: 0.5rem 1.6rem;
+		color: inherit;
+		font-family: $fontFamilyTitle;
+		font-weight: 700;
+		text-transform: uppercase;
+		transition: all .3s ease 0s;
+		@media (max-width: 460px) {
+			padding: 0.5rem 1.1rem;
+		}
+		&:hover {
+			@media (min-width: 830px) {
+				color: #FCE38A;
+				border-color: #FCE38A;
+			}
+		}
+	}
+	&__row {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		gap: 2rem;
+		@media (max-width: 700px) {
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
+		
+	}
+	.column-promo {
+		font-family: $fontFamilyTitle;
+		width: 100%;
+		transition: all .5s ease 0s;
+		@media (max-width: 700px) {
+			width: 45%;
+		}
+		&__line {
+			width: 100%;
+			background: rgba(255, 255, 255, 0.5);
+			height: 3px;
+			margin: 0rem 0rem 1rem 0rem;
+			transition: all .4s ease 0s;
+			position: relative;
+			& > div.column-promo__redline {
+				width: 25%;
+				height: 3px;
+				background: #F38181;
+				position: absolute;
+				z-index: 100;
+				top: 0;
+				left: 0;
+			}
+			@media (max-width: 700px) {
+				margin: 0rem 0rem 0.5rem 0rem;
+			}
+		}
+		&__line._main {
+			background: rgba(255, 255, 255, 1);
+		}
+		&__item {
+			font-weight: 400;
+			font-size: 1.125rem;
+			text-transform: uppercase;
+			opacity: 0.6;
+			color: inherit;
+			& > span {
+				font-weight: 700;
+				font-size: 1.5rem;
+				@media (max-width: 500px) {
+					font-size: 1.3rem;
+				}
+			}
+		}
+		&__item._main {
+			opacity: 1;
+		}
+	}
 }

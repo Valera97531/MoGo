@@ -20,7 +20,8 @@
 			</a>
 		</div>
 		<nav class="header__nav">
-			<ul class="header__menu">
+			<ul class="header__menu ">
+				<div class="header__menu-close">&#735;</div>
 				<li>
 					<a class="header__link" href="#about">About</a>
 				</li>
@@ -36,33 +37,196 @@
 				<li>
 					<a class="header__link" href="#contact">Contact</a>
 				</li>
-				<li>
-					<a href="#">
-						<svg viewBox="0 0 50 50" id="search">
-							<path fill="#ffffff"
-								d="M20.745 32.62c2.883 0 5.606-1.022 7.773-2.881L39.052 40.3a.996.996 0 001.414.002 1 1 0 00.002-1.414L29.925 28.319c3.947-4.714 3.717-11.773-.705-16.205-2.264-2.27-5.274-3.52-8.476-3.52s-6.212 1.25-8.476 3.52c-4.671 4.683-4.671 12.304 0 16.987a11.9 11.9 0 008.477 3.519zm-7.06-19.094c1.886-1.891 4.393-2.932 7.06-2.932s5.174 1.041 7.06 2.932c3.895 3.905 3.895 10.258 0 14.163-1.886 1.891-4.393 2.932-7.06 2.932s-5.174-1.041-7.06-2.932c-3.894-3.905-3.894-10.258 0-14.163z" />
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<svg version="1.1" id="shopping" x="0" y="0" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><style></style><path class="bst1" d="M11 19L6.4 4.5C6.2 3.6 5.3 3 4.4 3H2"/><path class="bst1" d="M26 23H8.4c-1.1 0-2-.9-2-2s.9-1.8 2-2L29 16V6H11"/><circle class="bst1" cx="11" cy="28" r="1"/><circle class="bst1" cx="24" cy="28" r="1"/></svg>
-					</a>
-				</li>
 			</ul>
+			<a href="#" class="header__search header__icon">
+				<svg viewBox="0 0 50 50" id="search">
+					<path fill="#ffffff"
+						d="M20.745 32.62c2.883 0 5.606-1.022 7.773-2.881L39.052 40.3a.996.996 0 001.414.002 1 1 0 00.002-1.414L29.925 28.319c3.947-4.714 3.717-11.773-.705-16.205-2.264-2.27-5.274-3.52-8.476-3.52s-6.212 1.25-8.476 3.52c-4.671 4.683-4.671 12.304 0 16.987a11.9 11.9 0 008.477 3.519zm-7.06-19.094c1.886-1.891 4.393-2.932 7.06-2.932s5.174 1.041 7.06 2.932c3.895 3.905 3.895 10.258 0 14.163-1.886 1.891-4.393 2.932-7.06 2.932s-5.174-1.041-7.06-2.932c-3.894-3.905-3.894-10.258 0-14.163z" />
+				</svg>
+			</a>
+			<a href="#" class="header__shop header__icon">
+				<svg version="1.1" id="shopping" x="0" y="0" viewBox="0 0 32 32" xml:space="preserve"
+					xmlns="http://www.w3.org/2000/svg">
+					<style></style>
+					<path class="bst1" d="M11 19L6.4 4.5C6.2 3.6 5.3 3 4.4 3H2" />
+					<path class="bst1" d="M26 23H8.4c-1.1 0-2-.9-2-2s.9-1.8 2-2L29 16V6H11" />
+					<circle class="bst1" cx="11" cy="28" r="1" />
+					<circle class="bst1" cx="24" cy="28" r="1" />
+				</svg>
+			</a>
+			<div class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</nav>
 	</div>
 </header>
 			<div class="content">
 				<section class="promo">
-	<div class="promo__container container">
+	<div class="container">
+		<div class="promo__wrapper">
+			<div class="promo__headers">
+				<h1 class="promo__title">
+					Creative template
+				</h1>
+				<h2 class="promo__subtitle">
+					Welcome to mogo
+				</h2>
+			</div>
+			<div class="promo__btns">
+				<div class="promo__topline"></div>
+				<a href="#" class="promo__btn">Learn more</a>
+			</div>
+			<div class="promo__row">
+				<div class="promo__column column-promo">
+					<div class="column-promo__line _main">
+						<div class="column-promo__redline"></div>
+					</div>
+					<a href="#" class="column-promo__item _main">
+						<span>01</span> intro
+					</a>
+				</div>
+				<div class="promo__column column-promo">
+					<div class="column-promo__line">
+						<div></div>
+					</div>
+					<a href="#" class="column-promo__item">
+						<span>03</span> about
+					</a>
+				</div>
+				<div class="promo__column column-promo">
+					<div class="column-promo__line">
+						<div></div>
+					</div>
+					<a href="#" class="column-promo__item">
+						<span>02</span> work
+					</a>
+				</div>
+				<div class="promo__column column-promo">
+					<div class="column-promo__line">
+						<div></div>
+					</div>
+					<a href="#" class="column-promo__item">
+						<span>04</span> contacts
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+				<section class="about" id="about">
+	<div class="container">
+		<div class="about__wrapper">
+			<div class="about__header">
+				<h2 class="about__title title">
+					What we do
+				</h2>
+				<h3 class="about__subtitle subtitle">
+					Story about us
+				</h3>
+				<div class="about__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+			<div class="about__row">
+				<div class="about__column">
+					<img src="img/about/about3.jpg" class="about__img" alt="about1">
+					<div class="about__hide hide-about">
+						<div class="hide-about__item">
+							<img src="img/about/users.png" alt="users" class="hide-about__icon">
+							<h3 class="hide-about__title">Super team</h3>
+						</div>
+					</div>
+				</div>
+				<div class="about__column">
+					<img src="img/about/about1.jpg" class="about__img" alt="about2">
+					<div class="about__hide hide-about">
+						<div class="hide-about__item">
+							<img src="img/about/users.png" alt="users" class="hide-about__icon">
+							<h3 class="hide-about__title">Super team</h3>
+						</div>
+					</div>
+				</div>
+				<div class="about__column">
+					<img src="img/about/about2.jpg" class="about__img" alt="about3">
+					<div class="about__hide hide-about">
+						<div class="hide-about__item">
+							<img src="img/about/users.png" alt="users" class="hide-about__icon">
+							<h3 class="hide-about__title">Super team</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about__footer footer-about">
+		<div class="container">
+			<div class="footer-about__wrapper">
+				<div class="footer-about__row">
+					<div class="footer-about__column">
+						<div class="footer-about__figure">
+							42
+						</div>
+						<div class="footer-about__name">
+							Web design project
+						</div>
+					</div>
+					<div class="footer-about__column">
+						<div class="footer-about__figure">
+							123
+						</div>
+						<div class="footer-about__name">
+							Happy client
+						</div>
+					</div>
+					<div class="footer-about__column">
+						<div class="footer-about__figure">
+							15
+						</div>
+						<div class="footer-about__name">
+							Award winner
+						</div>
+					</div>
+					<div class="footer-about__column">
+						<div class="footer-about__figure">
+							99
+						</div>
+						<div class="footer-about__name">
+							Cup of coffee
+						</div>
+					</div>
+					<div class="footer-about__column">
+						<div class="footer-about__figure">
+							24
+						</div>
+						<div class="footer-about__name">
+							Members
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+				<section class="amazing">
+	<div class="container">
+		<div class="amazing__wrapper">
+			<div class="amazing__header">
+				<h2 class="amazing__title title">
+					We work with
+				</h2>
+				<h3 class="amazing__subtitle subtitle">
+					Amazing services
+				</h3>
+			</div>
+		</div>
 	</div>
 </section>
 			</div>
 			<footer class="footer">
 	<div class="container">
-		helllo
-
 	</div>
 </footer>
 		</main>
