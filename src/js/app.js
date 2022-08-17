@@ -21,4 +21,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
+
+	const itemService = document.querySelectorAll('.item-service'),
+		itemHide = document.querySelector('.item-service__hide');
+
+	// itemService.forEach(item => {
+	// 	item.addEventListener('click', () => {
+	// 		itemService.classList.add('_active');
+	// 	});
+	// });
+
+	// itemService.addEventListener('click', () => {
+	// 	itemService.classList.toggle('_active');
+	// });
+
+	itemService.forEach(items => {
+		items.addEventListener('click', () => {
+			itemHide.classList.toggle('_active');
+		});
+	});
+
+
+
 });
