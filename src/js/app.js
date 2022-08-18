@@ -22,25 +22,34 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 
-	const itemService = document.querySelectorAll('.item-service'),
-		itemHide = document.querySelector('.item-service__hide');
+	const itemServiceButton = document.querySelectorAll('.item-service__inner'),
+		itemHide = document.querySelectorAll('.item-service__hide'),
+		itemArrow = document.querySelectorAll('.item-service__arrow');
 
-	// itemService.forEach(item => {
-	// 	item.addEventListener('click', () => {
-	// 		itemService.classList.add('_active');
-	// 	});
-	// });
+	let intervalId;
 
-	// itemService.addEventListener('click', () => {
-	// 	itemService.classList.toggle('_active');
-	// });
-
-	itemService.forEach(items => {
-		items.addEventListener('click', () => {
-			itemHide.classList.toggle('_active');
+	itemServiceButton.forEach(items => {
+		items.addEventListener('click', items => {
+			const menu = items.currentTarget.dataset.path;
+			itemHide.forEach(item => {
+				if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+					item.classList.remove('_active');
+					item.classList.remove('open');
+					document.querySelector(`[data-target=${menu}]`).classList.add('_active');
+					intervalId = setTimeout(() => {
+						document.querySelector(`[data-target=${menu}]`).classList.add('open');
+					}, 0);
+				}
+				if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+					clearTimeout(intervalId);
+					document.querySelector(`[data-target=${menu}]`).classList.remove('_active');
+					intervalId = setTimeout(() => {
+						document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+					}, 0);
+				}
+			});
 		});
 	});
-
 
 
 });

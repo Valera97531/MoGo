@@ -13,6 +13,9 @@
 			margin: 0rem auto 4rem auto;
 		}
 	}
+	&__text {
+		text-align: center;
+	}
 	&__row {
 		display: flex;
 		gap: 1.875rem;
@@ -200,6 +203,7 @@
 	}
 }
 
+
 .title {
 	font-family: $fontFamilyItalyc;
 	font-weight: 400;
@@ -234,6 +238,5 @@
 	font-size: 0.9375em;
 	line-height: 1.6;
 	margin: 0 auto;
-	text-align: center;
 }
 
