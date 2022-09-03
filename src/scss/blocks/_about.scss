@@ -22,10 +22,9 @@
 	&__row {
 		display: flex;
 		gap: 1.875rem;
-		flex-wrap: wrap;
-		justify-content: center;
 		@media (max-width: 870px) {
 			gap: 1rem;
+			flex-wrap: wrap;
 		}
 	}
 	&__column {
@@ -140,14 +139,12 @@
 			justify-content: center;
 			min-height: 150px;
 		}
-		@media (max-width: 560px) {
-		}
 	}
 	&__column {
 		color: $colorLight;
 		font-family: $fontFamilyTitle;
 		position: relative;
-		flex: 1 1 20%;
+		flex: 0 1 20%;
 		min-height: 268px;
 		display: flex;
 		flex-direction: column;
@@ -158,7 +155,7 @@
 			min-height: 150px;
 		}
 		@media (max-width: 560px) {
-			flex: 1 1 100%;
+			flex: 0 1 100%;
 			&:not(:last-child) {
 				border-bottom: 1px solid #b5eae0;
 			}
@@ -209,7 +206,7 @@
 	font-family: $fontFamilyItalyc;
 	font-weight: 400;
 	font-size: 1.5rem;
-	margin: 0rem 0rem 0.7rem 0rem;
+	margin: 0rem 0rem 0.9rem 0rem;
 	color: #333333;
 	text-align: center;
 }
@@ -222,6 +219,7 @@
 	margin: 0rem 0rem 4.75rem 0rem;
 	position: relative;
 	text-align: center;
+	text-transform: uppercase;
 	&:before {
 		content: "";
 		width: 60px;

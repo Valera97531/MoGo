@@ -1,5 +1,8 @@
 .team {
 	padding: 0rem 0rem 6.875rem 0rem;
+	@media (max-width: 500px) {
+		padding: 0rem 0rem 3.5rem 0rem;
+	}
 	&__wrapper {
 		padding: 0rem 0rem 6.5rem 0rem;
 		@media (max-width: 500px) {
@@ -50,7 +53,36 @@
 	}
 	.logo-team {
 		min-height: 15.625rem;
-		background: #f8f8f8;
+		background: #f5f5f5;
+		&__wrapper {
+			min-height: 15.625rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			@media (max-width: 480px) {
+				padding: 1.5rem 0rem 0rem 0rem;
+			}
+		}
+		&__brand {
+			img {
+				width: 6rem;
+				height: 6rem;
+			}
+			@media (max-width: 900px) {
+				flex: 0 0 33.3333%;
+				display: flex;
+				justify-content: center;
+				img {
+					width: 5rem;
+					height: 5rem;
+				}
+			}
+			@media (max-width: 480px) {
+				flex: 0 0 50%;
+				margin: 0rem 0rem 1.5rem 0rem;
+			}
+		}
 	}
 }
 

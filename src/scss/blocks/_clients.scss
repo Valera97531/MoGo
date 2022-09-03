@@ -1,0 +1,78 @@
+.clients {
+	padding: 6.25rem 0rem;
+	background: url("../img/clients/clients_bg.jpg") center center / cover no-repeat;
+	@media (max-width: 570px) {
+		padding: 4rem 0rem;
+	}
+	&__header {
+		margin: 0rem 0rem 6rem 0rem;
+	}
+	&__title {
+		text-transform: capitalize;
+	}
+	&__rows {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+		grid-auto-rows: auto;
+		column-gap: 3.75rem;
+		row-gap: 3rem;
+		padding: 0rem 2rem;
+		@media (max-width: 620px) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			column-gap: 0;
+			row-gap: 2rem;
+		}
+		@media (max-width: 400px) {
+			padding: 0rem;
+		}
+	}
+	.item-clients {
+		display: flex;
+		&__img {
+			width: 110px;
+			height: 110px;
+			margin: 0rem 1.5rem 0rem 0rem;
+			img {
+				width: 110px;
+				height: 110px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+			@media (max-width: 992px) {
+				margin: 0rem 0rem 1rem 0rem;
+			}
+		}
+		&__name {
+			font-family: $fontFamilyTitle;
+			color: $colorTitle;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 0.875rem;
+			margin: 0rem 0rem 1rem 0rem;
+		}
+		&__position {
+			font-weight: 300;
+			font-style: italic;
+			color: $colorTitle;
+			font-size: 0.9375rem;
+			margin: 0rem 0rem 1rem 0rem;
+		}
+		&__line {
+			display: block;
+			width: 60px;
+			height: 3px;
+			background: #f38181;
+			margin: 0rem 0rem 1rem 0rem;
+			@media (max-width: 992px) {
+				margin: 0rem auto 1rem auto;
+			}
+		}
+		@media (max-width: 992px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+}
