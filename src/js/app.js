@@ -1,6 +1,9 @@
 import * as flsFunctions from "./modules/function.js";
 flsFunctions.isWebp();
 
+import $ from "jquery";
+import "slick-carousel";
+
 document.addEventListener('DOMContentLoaded', () => {
 	const menu = document.querySelector('.header__menu'),
 		burger = document.querySelector('.header__burger'),
@@ -51,5 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
+	$(".slider__container").slick({
+		responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					arrows: false,
+					dots: true
+				}
+			}
+		]
+
+	});
 
 });
+

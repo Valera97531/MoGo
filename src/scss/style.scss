@@ -2,6 +2,7 @@
 @import "fonts";
 @import "base/var";
 @import "base/ibg";
+@import "libs/slick";
 
 html {
 	scroll-behavior: smooth;
@@ -45,5 +46,4 @@ body {
 @import "blocks/work";
 @import "blocks/clients";
 @import "blocks/blog";
-
 @import "blocks/footer";
